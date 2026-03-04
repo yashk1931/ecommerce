@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 export default function Home(){
   return (
     <>
-    <main class="banner">
-        <div class="container">
+    <main className="banner">
+        <div className="container">
             <h1>Step Up Your<span id="style"> Style</span></h1>
-            <p class="para">Explore the latest drops from Nike, Adidas, Vans, and Converse — designed for comfort and
+            <p className="para">Explore the latest drops from Nike, Adidas, Vans, and Converse — designed for comfort and
                 performance.</p>
-            <button class="Bshop">Shop Now</button>
+            <button className="Bshop">Shop Now</button>
         </div>
     </main>
 
-    <div class="cards">
-        <div class="companycard">
-            <a><Link to='/men/skechers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/NeoTrek.jpg"/></Link></a>
+    <div className="cards">
+        <div className="companycard">
+            <Link to='/men/skechers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/NeoTrek.jpg" alt="NeoTrek Shoe" /></Link>
         </div>
-        <div class="companycard">
-           <Link to='/men/sneakers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/PeakFlex.jpg"/></Link>
+        <div className="companycard">
+           <Link to='/men/sneakers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/PeakFlex.jpg" alt="PeakFlex" /></Link>
         </div>
-        <div class="companycard">
-           <Link to='/men/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/VeloSole.jpg"/></Link>
+        <div className="companycard">
+           <Link to='/men/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/VeloSole.jpg" alt="VeloSole.jpg" /></Link>
         </div>
-        <div class="companycard">
-          <Link to='/men/sneakers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/Flexon.jpg"/></Link>
+        <div className="companycard">
+          <Link to='/men/sneakers' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/Flexon.jpg" alt="Flexon.jpg" /></Link>
         </div>
-        <div class="companycard">
-          <Link to='/women/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/PrimeWalk.jpg"/></Link>
+        <div className="companycard">
+          <Link to='/women/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/PrimeWalk.jpg" alt="PrimeWalk.jpg" /></Link>
         </div>
-        <div class="companycard">
-          <Link to='/men/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/CoreStep.jpg"/></Link>
+        <div className="companycard">
+          <Link to='/men/formal' onClick={() => window.scrollTo(0, 0)}><img src="/pictures/CoreStep.jpg" alt="CoreStep.jpg"/></Link>
         </div>
     </div>
     <footer>
