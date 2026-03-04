@@ -46,10 +46,10 @@ export default function Sneakers({ addtocart }) {
         {products.map((item, index) => (
           <div className="card" key={index}>
             <img src={item.image} alt={item.name} />
-            <div class="card-content">
+            <div className="card-content">
             <h3>{item.name}</h3>
             <p>{item.brand}</p>
-            <p class="price">{item.price}</p>
+            <p className="price">{item.price}</p>
             <button onClick={() => addtocart(item)} className="add-btn">
               Add to Cart
             </button>
